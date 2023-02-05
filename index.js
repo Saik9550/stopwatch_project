@@ -1,3 +1,6 @@
+"use strict"
+
+
 // In this code we are going to use simple Javascript functions
 
 // first we are going t get all the elements with the specific ids given in index.html file and store them in const
@@ -5,17 +8,17 @@
 
 // sample syntax if we want to use getElementById as follows documwnt.getElemrntById("timer");
 
-const timerDisplay = document.querySelector("#timer")
-const startButton = document.querySelector("#start")
-const pauseButton = document.querySelector("#pause")
-const resetButton = document.querySelector("#reset")
+const timerDisplay = document.querySelector("#timer");
+const startButton = document.querySelector("#start");
+const pauseButton = document.querySelector("#pause");
+const resetButton = document.querySelector("#reset");
 
 // intially we are going to assume our stopwatch is not running(like when our page is initially loaded)
-let running = false
+let running = false;
 
 // we are going to use a variable to control the timing of the stopwatch
-let interval
-let CompletedTime = 0
+let interval;
+let CompletedTime = 0;
 
 function startTimer() {
   if (!running) {
