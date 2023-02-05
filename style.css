@@ -35,7 +35,7 @@ button {
   button:hover{
     background: rgba(0, 0, 0, 0.685);
     color: white;
-    box-shadow:  gray 4px 4px 0 0
+    box-shadow:  gray 4px 4px 0 0;
 
   }
   button:active{
