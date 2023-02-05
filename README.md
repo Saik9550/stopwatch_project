@@ -8,7 +8,7 @@ In this project we are using following coding technologies:
 
 Project Summary:
 
-We are building a stopwatch project using above technologies. we are going to have start, pause and reset buttons in index.html file and a text which displays the time.
+We are building a stopwatch project using above technologies. we are going to have start, pause and reset buttons in index.html file and a text which displays the time in hh:mm:ss format. time is changed once the buttons are pressed using innerHtml inside javascript
 
 All the above buttons are fetched in javascript file using queryselector
 
