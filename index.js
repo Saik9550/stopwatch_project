@@ -8,7 +8,11 @@
 
 // sample syntax if we want to use getElementById as follows documwnt.getElemrntById("timer");
 
+
+// timerdisplay is used to change the 
 const timerDisplay = document.querySelector("#timer");
+
+
 const startButton = document.querySelector("#start");
 const pauseButton = document.querySelector("#pause");
 const resetButton = document.querySelector("#reset");
@@ -18,9 +22,13 @@ let running = false;
 
 // we are going to use a variable to control the timing of the stopwatch
 let interval;
+
+// completed time stores the time in seconds
 let CompletedTime = 0;
 
+
 function startTimer() {
+  // it enters into if whenever the running is false
   if (!running) {
     running = true
 
@@ -31,7 +39,6 @@ function startTimer() {
 
 function pauseTimer() {
   // in this function we are going to make the running tofalse and we are going to clear the setInterval function
-  //
   if (running) {
     running = false
     clearInterval(interval)
@@ -46,9 +53,9 @@ function resetTimer() {
 }
 
 function updateTimer() {
-  // for every 10milliseconds this function is called and will increase the elapsed time by 1
+  // for every one second this function is called and will increase the elapsed time by 1
   CompletedTime++
-  console.log(CompletedTime)
+  // console.log(CompletedTime)
   displayTime()
 }
 
